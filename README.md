@@ -23,7 +23,7 @@ To compile and run tests also execute:
 
 ## Overview
 -**FeXyK** *first* push
--**Sili** **\clack*\** *noice*
+-**sili98** *noice* job
 
 ### Structure
 
