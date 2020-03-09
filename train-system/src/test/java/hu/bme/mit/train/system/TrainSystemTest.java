@@ -52,7 +52,7 @@ public class TrainSystemTest {
 	@Test
 	public void JUnitTestCustom() {
 			
-		user.overrideJoystickPosition(2112); //4
+		user.overrideJoystickPosition(4); //4
 		controller.followSpeed();
 		user.overrideJoystickPosition(-5);
 		controller.followSpeed();
