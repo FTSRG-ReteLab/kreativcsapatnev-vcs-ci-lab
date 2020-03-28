@@ -18,7 +18,7 @@ public class TrainSystem {
 	private Timer timer = new Timer();
 	
 	public TrainSystem() {
-		timer.scheduleAtFixedRate(controller.followSpeed, 100, 100);
+		timer.scheduleAtFixedRate( () -> controller.followSpeed(), 100, 100);
 	}
 
 	public TrainController getController() {
