@@ -8,6 +8,7 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 	private Thread thread;
+	private int REFRESH_RATE = 500;
 	public TrainControllerImpl() {
 		thread = new Thread(){
 			public void run()
@@ -15,7 +16,7 @@ public class TrainControllerImpl implements TrainController {
 				thread.run();
 				try{
 					followSpeed();
-					thread.sleep(1);
+					thread.sleep(REFRESH_RATE);
 				}
 				catch (InterruptedException e){
 					e.printStackTrace();
